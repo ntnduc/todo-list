@@ -27,11 +27,12 @@ const AppLayout = () =>
         overflow: 'auto',
         height: '100vh',
         position: 'fixed',
-        left: 0,
+                    left: 0,
+        backgroundColor: 'white',
       }}
     >
       <div className="logo" />
-      <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
+      <Menu theme="light" mode="inline" defaultSelectedKeys={['4']} style ={{paddingTop: 80 }}>
         <Menu.Item key="1" icon={<UserOutlined />}>
           nav 1
         </Menu.Item>
@@ -59,7 +60,7 @@ const AppLayout = () =>
       </Menu>
     </Sider>
     <Layout className="site-layout" style={{ marginLeft: 200 }}>
-      <Header className="site-layout-background" style={{ padding: 0 }} />
+                <Header className="site-layout-background" style={{ padding: 0, backgroundColor: "white"}} />
       <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
         <div className="site-layout-background" style={{ padding: 24, textAlign: 'center' }}>
           ...
